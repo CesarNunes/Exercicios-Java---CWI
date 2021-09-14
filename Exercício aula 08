@@ -1,0 +1,36 @@
+//Calacular a nédia das notas de um aluno e verificar se ele foi aprovado
+package cwi.reset3.javaeclipse.aula08;
+
+import java.util.Scanner;
+
+public class MediaNotas {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite a primeira nota:");
+		double nota1 = sc.nextDouble();
+		System.out.println("Digite a segunda nota:");
+		double nota2 = sc.nextDouble();
+		System.out.println("Digite a terceira nota:");
+		double nota3 = sc.nextDouble();
+		System.out.println("Digite a quarta nota:");
+		double nota4 = sc.nextDouble();
+		
+		double mediaNotas = (nota1 + nota2 + nota3 + nota4) / 4;
+		
+		if (mediaNotas == 10) {
+			System.out.println("");
+			System.out.println("Aluno aprovado com louvores.");
+			System.out.println("Sua média é: " + mediaNotas);
+		} else if (mediaNotas >= 7) {
+			System.out.println("");
+			System.out.println("Aluno aprovado.");
+			System.out.println("Sua média é: " + mediaNotas);
+		} else {
+			System.out.println("");
+			System.out.println("Aluno reprovado.");
+			System.out.println("Sua média é: " + mediaNotas);
+		}
+	}
+}
