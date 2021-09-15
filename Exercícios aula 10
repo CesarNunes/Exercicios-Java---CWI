@@ -1,0 +1,73 @@
+//Os exercícios da aula 09 só consegui fazer a calculadora da tabuada, por isso não coloquei eles aqui
+
+//Armazenar 5 valores em um vetor e depois criar um outro vetor com os valores do primeiro vetor multiplicado por 2
+package cwi.reset3.javaeclipse.aula10;
+
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int[] primeiroVetor = new int[5];
+		int[] segundoVetor = new int[5];
+		//primeiro Vetor
+		for (int i = 0; i < primeiroVetor.length; i++) {
+			System.out.println("Digite um número:");
+			primeiroVetor[i] = sc.nextInt();
+		}
+    // segundo Vetor
+		for (int i = 0; i < primeiroVetor.length; i++) {
+			segundoVetor[i] = primeiroVetor[i] * 2;
+		}
+    //print do primeiro
+		System.out.println("Valores do pimeiro vetor:");
+		for (int vetor1 : primeiroVetor) {
+			System.out.println(vetor1);
+		}
+		//print do segundo
+		System.out.println("Valores do segundo vetor:");
+		for (int vetor2 : segundoVetor) {
+			System.out.println(vetor2);
+		}
+    
+	}
+}
+---------------------------------------------------------------------
+//Receber 10 valores de idades e verificar qunatas pessoas são maiores de 18 anos
+package cwi.reset3.javaeclipse.aula10;
+
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int[] idades = new int[10];
+				
+		for (int i = 0; i < idades.length; i++) {
+			System.out.println("Digite a idade da " + (i+1) + "º pessoa:");
+			idades[i] = sc.nextInt();
+		}
+    
+		int quantidadeMaiorIdade = 0;
+		for (int i = 0; i < idades.length; i++) {
+			  if (idades[i] >= 18) {
+				  quantidadeMaiorIdade++;
+			  }
+		}
+    
+		System.out.println("As idades analisadas são:");
+		for(int idade : idades) {
+			System.out.println(idade);
+		}
+    
+		System.out.println("");
+		System.out.println("A quantidade de pessoas maior de idade é: " + quantidadeMaiorIdade);
+		
+	}
+}
+
+
