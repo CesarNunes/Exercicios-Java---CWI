@@ -1,6 +1,7 @@
 //Os exercícios da aula 09 só consegui fazer a calculadora da tabuada, por isso não coloquei eles aqui
 
 //Armazenar 5 valores em um vetor e depois criar um outro vetor com os valores do primeiro vetor multiplicado por 2
+```java
 package cwi.reset3.javaeclipse.aula10;
 
 import java.util.Scanner;
@@ -34,8 +35,12 @@ public class Exercicio01 {
     
 	}
 }
+```
+
+
 ---------------------------------------------------------------------
 //Receber 10 valores de idades e verificar qunatas pessoas são maiores de 18 anos
+```java
 package cwi.reset3.javaeclipse.aula10;
 
 import java.util.Scanner;
@@ -69,5 +74,5 @@ public class Exercicio02 {
 		
 	}
 }
-
+```
 
