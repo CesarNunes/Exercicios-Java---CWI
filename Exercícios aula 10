@@ -75,9 +75,3 @@ public class Exercicio02 {
 	}
 }
 
-Teste
-```java
-for(int idade : idades) {
-	System.out.prinln(idade);
-}
-```
